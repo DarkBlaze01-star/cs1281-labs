@@ -9,7 +9,7 @@ Original file is located at
 
 import os
 import re
-
+#IT12
 # 1. Setup the data directory and generate input test data (IT12)
 os.makedirs('data', exist_ok=True)
 
@@ -44,7 +44,7 @@ rejects = []
 
 # Regex pattern to match valid codes and numbers
 pattern = re.compile(r'^(PE-\d{4})\s*,\s*([\d.]+)\s*,\s*(DAY|NIGHT|SWING)')
-
+IT-10
 # 3. PARSE & VALIDATE line by line
 for line_num, line in enumerate(lines, 1):
     line = line.strip()
@@ -61,12 +61,12 @@ for line_num, line in enumerate(lines, 1):
             rejects.append(f"Line {line_num}: Invalid number format -> {line}")
     else:
         rejects.append(f"Line {line_num}: Regex mismatch -> {line}")
-
+#IT-08
 # 4. AGGREGATE totals and averages
 total_records = len(valid_records)
 sum_values = sum(r['value'] for r in valid_records)
 avg_value = sum_values / total_records if total_records > 0 else 0
-
+#IT-06
 # 5. WRITE results back to disk
 with open('data/report.txt', 'w', encoding='utf-8') as f:
     f.write("=== SHIFT PRODUCTION REPORT ===\n")
