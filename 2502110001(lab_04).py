@@ -1,3 +1,4 @@
+#IT-12
 # -*- coding: utf-8 -*-
 """2502110001(lab-04).ipynb
 
@@ -47,7 +48,7 @@ print("\n--- SHIFT REPORT ---")
 print(f"Total Accepted : {accept_count}")
 print(f"Total Rework   : {rework_count}")
 print(f"Total Scrap    : {scrap_count}")
-
+#IT-10
 import random
 accept_count = 0
 rework_count = 0
@@ -74,7 +75,7 @@ print("\n--- SHIFT REPORT ---")
 print(f"Total Accepted : {accept_count}")
 print(f"Total Rework   : {rework_count}")
 print(f"Total Scrap    : {scrap_count}")
-
+#IT-08
 import random
 
 mode = input("Choose mode (1: Halt on Scrap, 2: Skip Scrap): ").strip()
@@ -116,7 +117,7 @@ print(f"Total Inspected: {total_inspected}")
 print(f"Total Accepted : {accept_count}")
 print(f"Total Rework   : {rework_count}")
 print(f"Total Scrap    : {scrap_count}")
-
+#IT- 06
 import random
 
 consecutive_accepts = 0
